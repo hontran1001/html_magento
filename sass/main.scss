@@ -313,7 +313,7 @@ body {
     }
     #primary-menu {
       float: left;
-      width: calc(100% - 315px);
+      width: calc(100% - 290px);
       padding-left: 15px;
       padding-right: 15px;
       margin-left: 20px;
@@ -353,7 +353,7 @@ body {
       width: 90px;
       margin-top: 10px;
       #social {
-        float: left;
+        float: right;
         .sc-item {
           a {
             &:hover {
@@ -370,31 +370,6 @@ body {
             color: #206db5;
             font-size: 1.6em;
           }
-        }
-      }
-      #lagauge {
-        float: right;
-        .dropdown-menu{
-          background: none;
-          width: auto;
-          min-width: auto;
-          box-shadow: none;
-          border: none;
-        }
-        span{
-          cursor: pointer;
-        }
-        a{
-          padding: 0px;
-          &:hover{
-            color: #206db5;
-            background: none;
-          }
-        }
-        a, span {
-          line-height: 1.7;
-          color: #fff;
-          font-style: italic;
         }
       }
     }
@@ -424,55 +399,8 @@ body {
 #content {
   #about-us {
     padding: 30px 0px;
-    .ab-item {
-      padding: 30px;
-      text-align: center;
-      &#accelerate {
-        > .demo-icon {
-          font-size: 3.6em;
-          padding: 5px 0px;
-        }
-      }
-      > .demo-icon {
-        font-size: 4.2em;
-        color: #949494;
-      }
-      .primary-box-title {
-        color: #555555;
-        text-transform: uppercase;
-        font-size: 1.3em;
-        font-weight: bold;
-        a {
-          font-size: 1.3em;
-          text-decoration: none;
-          @include all-transition;
-          color: #555555;
-          &:hover {
-            color: #333333;
-          }
-        }
-      }
-      .view-more {
-        margin-top: 10px;
-        display: inline-block;
-        padding: 10px 20px;
-        background: #ee8207;
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.2em;
-        padding-right: 60px;
-        position: relative;
-        border-radius: 4px;
-        @include all-transition;
-        &:hover {
-          background: #CC6D07;
-        }
-        i {
-          color: #fff;
-          right: 10px;
-          @include transform-vertical-center
-        }
-      }
+    .row-2{
+      background: #dddddd;
     }
   }
   #social-posts {
@@ -522,7 +450,7 @@ body {
       }
     }
   }
-  #row-partners {
+  #row-product-company {
     padding: 75px 0px;
     .title {
       color: #333333;
@@ -534,9 +462,9 @@ body {
       margin-bottom: 60px;
       border-bottom: 1px solid #ddd;
     }
-    #slider-partners {
+    #slider-product-company {
       .slides {
-        .partner {
+        .product-company {
           &:first-child {
             .link-cp {
               padding-left: 46px;

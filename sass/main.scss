@@ -281,7 +281,7 @@ body {
 }
 
 #masthead {
-  background-image: url("../img/banner.png");
+  background-image: url("../img/banner.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -305,7 +305,7 @@ body {
       #logo {
         max-width: 200px;
         display: block;
-        img{
+        img {
           max-width: 100%;
           height: auto;
         }
@@ -342,7 +342,7 @@ body {
             display: block;
             padding: 10px;
             color: #206db5;
-            font-size: 1.2em;
+            font-size: 1.1em;
             text-transform: uppercase;
           }
         }
@@ -350,7 +350,7 @@ body {
     }
     #action-link {
       float: left;
-      width: 90px;
+      width: 70px;
       margin-top: 10px;
       #social {
         float: right;
@@ -358,7 +358,7 @@ body {
           a {
             &:hover {
               i.demo-icon {
-                color: #fff;
+                color: #498fd1;
               }
             }
             display: block;
@@ -381,7 +381,7 @@ body {
       text-align: center;
       .slogan {
         @include transform-horizontal-center;
-        top: 26%;
+        top: 45%;
         max-width: 840px;
         width: 840px;
         .sub {
@@ -397,14 +397,144 @@ body {
 }
 
 #content {
+  h2.title.heading {
+    color: #206db5;
+    font-size: 2.4em;
+    font-weight: normal;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+
+  }
   #about-us {
     padding: 30px 0px;
-    .row-2{
-      background: #dddddd;
+    .row-1 {
+      margin-bottom: 60px;
+    }
+    .row-2 {
+      background-image: url("../img/about-us.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 120px 0px;
+      .left-position {
+        padding-right: 30px;
+        border-right: 1px solid #dddddd;
+        .thumbnail {
+          float: right;
+          margin-left: 15px;
+        }
+        .desc {
+          text-align: right;
+        }
+      }
+      .right-position {
+        padding-left: 30px;
+        .desc {
+          text-align: left;
+        }
+        .thumbnail {
+          float: left;
+          margin-right: 15px;
+        }
+      }
+
+      .thumbnail {
+        height: 140px;
+        width: 140px;
+        overflow: hidden;
+        border-radius: 50%;
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+  }
+  #category-products {
+    .nav-tabs {
+      border: none;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .tab-content > .tab-pane{
+      margin-bottom: 40px;
+    }
+    .nav-tabs > li {
+      float: none;
+      margin: 0px;
+      border: none !important;
+      display: inline-block;
+      > a {
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: bold;
+        color: #111;
+        padding: 10px !important;
+        display: block;
+        margin: 0px !important;
+        border: none !important;
+        &:hover{
+          background: none;
+          border: none !important;
+        }
+      }
+
+    }
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus {
+      border: none;
+      color: #3c82c4;
+    }
+    .category-detail {
+      &.laptop {
+        .flexslider .slides > li {
+          > a {
+            background-image: url('../img/labtop_bg.png');
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            img {
+              display: inline-block;
+              margin-top: -29px;
+              width: 100%;
+              height: 235px;
+            }
+          }
+        }
+      }
+      &.mobile {
+        .flexslider .slides > li {
+          > a {
+            background-image: url(../img/smartphone_vorlage.png);
+            background-position: center;
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            img {
+              display: inline-block;
+              margin-top: -14px;
+              width: 100%;
+              height: auto;
+              max-width: 150px;
+            }
+          }
+        }
+      }
+      .flexslider .slides > li {
+        > a {
+          padding: 69px;
+          display: block;
+          text-align: center;
+          max-width: 517px;
+          overflow: hidden;
+        }
+      }
     }
   }
   #social-posts {
-    padding: 75px 0px;
+    padding: 60px 0px;
     background: #eef1f5;
     .post-social {
       .wrap {
@@ -451,17 +581,8 @@ body {
     }
   }
   #row-product-company {
-    padding: 75px 0px;
-    .title {
-      color: #333333;
-      font-size: 2.8em;
-      font-weight: normal;
-      margin-top: 0px;
-      padding-bottom: 20px;
-      text-align: center;
-      margin-bottom: 60px;
-      border-bottom: 1px solid #ddd;
-    }
+    padding: 50px 0px;
+
     #slider-product-company {
       .slides {
         .product-company {
@@ -494,6 +615,12 @@ body {
   }
 }
 
+h4.title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #111;
+}
+
 #colophon {
   #footer {
     padding: 50px 0px;
@@ -511,14 +638,14 @@ body {
         }
       }
       .title {
-        color: #f58508;
+        color: #3c82c4;
         font-size: 1.6em;
         margin-top: 0px;
         margin-bottom: 30px;
         .demo-icon {
           color: #eef1f5;
           margin-right: 10px;
-          background: #f58508;
+          background: #3c82c4;
           width: 40px;
           height: 40px;
           text-align: center;
@@ -601,7 +728,7 @@ body {
 
   }
   #site-info {
-    padding: 20px 0px;
+    padding: 10px 0px;
     #footer-menu {
       .menu {
         text-align: center;
@@ -643,10 +770,10 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
-  html,body{
+  html, body {
     overflow-x: hidden;
   }
-  #menu-mobile.hidden{
+  #menu-mobile.hidden {
     display: block !important;
     float: right;
     margin-top: 1px;
@@ -663,7 +790,7 @@ body {
     @include remove-outline;
   }
   #masthead #header #primary-menu {
-    &.open{
+    &.open {
       right: 0px;
     }
     @include all-transition;
@@ -676,22 +803,22 @@ body {
     padding: 0px;
     margin: 0px;
     z-index: 9999;
-    .menu{
-      .menu-item{
+    .menu {
+      .menu-item {
         display: block;
         text-align: left;
-        a{
+        a {
           padding: 10px 20px;
           display: block;
         }
-        &:after{
+        &:after {
           transform: none;
           left: 20px;
         }
       }
     }
   }
-  #masthead #header #action-link{
+  #masthead #header #action-link {
     float: right;
   }
 }
@@ -721,25 +848,25 @@ body {
 }
 
 @media only screen and (max-width: 420px) {
-  #masthead #header #action-link{
-   clear: both;
+  #masthead #header #action-link {
+    clear: both;
     width: 100%;
     text-align: left;
     margin-top: 15px;
   }
-  #masthead #header #action-link #social{
+  #masthead #header #action-link #social {
     display: inline-block;
     float: none;
   }
-  #masthead #header #action-link #lagauge{
+  #masthead #header #action-link #lagauge {
     display: inline-block;
     float: none;
   }
-  #menu-mobile.hidden{
+  #menu-mobile.hidden {
     position: absolute;
-    right:0px;
+    right: 0px;
   }
-  #masthead #header{
+  #masthead #header {
     padding: 20px 0px;
   }
 }

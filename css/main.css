@@ -447,11 +447,227 @@ body .demo-icon {
     max-width: 350px;
     height: 220px;
     overflow: hidden; }
-    .archive .products .product.laptop .wrap-box img {
+    .archive .products .product.laptop .wrap-box .over {
       display: inline-block;
+      margin: 0;
       margin-top: 10%;
-      width: 73%;
-      height: auto; }
+      width: 74%;
+      height: 142px;
+      overflow: hidden; }
+      .archive .products .product.laptop .wrap-box .over img {
+        width: 100%;
+        height: auto; }
+  .archive .products .product.mobile {
+    text-align: center; }
+    .archive .products .product.mobile .wrap-box {
+      background-image: url(../img/smartphone_vorlage.png);
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      display: inline-block;
+      text-align: center;
+      max-width: 225px;
+      height: 366px;
+      overflow: hidden; }
+      .archive .products .product.mobile .wrap-box .over {
+        display: inline-block;
+        margin: 0;
+        margin-top: 23%;
+        width: 71%;
+        height: 246px;
+        padding: 0px;
+        overflow: hidden; }
+        .archive .products .product.mobile .wrap-box .over img {
+          width: 100%;
+          height: auto; }
+
+#products-related .products {
+  margin-left: -30px;
+  margin-right: -30px; }
+  #products-related .products .product {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px; }
+    #products-related .products .product .box {
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -webkit-transition: all 0.2s ease;
+      padding: 10px; }
+    #products-related .products .product:hover .box {
+      border-color: #2aabd2; }
+    #products-related .products .product .title {
+      font-size: 1.1em;
+      margin: 5px 0px;
+      text-transform: uppercase;
+      font-weight: bold; }
+      #products-related .products .product .title a {
+        color: #111;
+        transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        text-decoration: none; }
+        #products-related .products .product .title a:hover {
+          color: #206db5; }
+  #products-related .products .product.laptop .wrap-box {
+    background-image: url(../img/labtop_bg.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: block;
+    text-align: center;
+    max-width: 350px;
+    height: 220px;
+    overflow: hidden; }
+    #products-related .products .product.laptop .wrap-box .over {
+      display: inline-block;
+      margin: 0;
+      margin-top: 10%;
+      width: 74%;
+      height: 142px;
+      overflow: hidden; }
+      #products-related .products .product.laptop .wrap-box .over img {
+        width: 100%;
+        height: auto; }
+  #products-related .products .product.mobile {
+    text-align: center; }
+    #products-related .products .product.mobile .wrap-box {
+      background-image: url(../img/smartphone_vorlage.png);
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      display: inline-block;
+      text-align: center;
+      max-width: 225px;
+      height: 366px;
+      overflow: hidden; }
+      #products-related .products .product.mobile .wrap-box .over {
+        display: inline-block;
+        margin: 0;
+        margin-top: 23%;
+        width: 71%;
+        height: 246px;
+        padding: 0px;
+        overflow: hidden; }
+        #products-related .products .product.mobile .wrap-box .over img {
+          width: 100%;
+          height: auto; }
+
+#form-rating {
+  background: #f2f2f2;
+  padding: 30px;
+  color: #111; }
+  #form-rating .review-legend strong {
+    color: #206db5; }
+  #form-rating input, #form-rating textarea {
+    width: 100%;
+    height: 32px; }
+  #form-rating textarea {
+    height: 200px; }
+  #form-rating .label {
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    color: #111;
+    text-align: left;
+    padding-left: 0px; }
+  #form-rating #submit-rating {
+    margin-top: 20px; }
+
+#products-related {
+  margin-top: 30px; }
+
+#carousel-thumbnail, #carousel-thumbnail-1 {
+  margin-bottom: 30px; }
+  #carousel-thumbnail .slides li, #carousel-thumbnail-1 .slides li {
+    height: 120px;
+    overflow: hidden; }
+
+.flex-direction-nav a:before {
+  font-size: 2em; }
+
+#share {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  #share .jssocials-share a {
+    font-size: 0.9em; }
+  #share .jssocials-share .fa {
+    font-size: 0.9em; }
+
+.single .thumbnail {
+  padding: 0px;
+  border: none;
+  box-shadow: none; }
+.single .widget h4.title {
+  font-size: 1.1em; }
+.single .widget .title-widget {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4em;
+  position: relative;
+  margin-bottom: 30px; }
+  .single .widget .title-widget:after {
+    border-bottom: 2px solid #206db5;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    content: '';
+    width: 80px; }
+.single .widget .post {
+  margin-bottom: 15px; }
+
+#secondary {
+  margin-top: 25px; }
+
+#secondary, #primary {
+  margin-bottom: 40px; }
+
+.content-widget .post .thumbnail {
+  padding: 0px;
+  border: none;
+  box-shadow: none;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  position: relative; }
+  .content-widget .post .thumbnail img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto; }
+
+#product-content .row.action {
+  margin-bottom: 30px; }
+#product-content .rating {
+  padding-left: 0px;
+  list-style: none;
+  margin-bottom: 0px;
+  list-style: none;
+  margin-bottom: 15px; }
+  #product-content .rating li {
+    display: inline-block; }
+    #product-content .rating li .fa {
+      font-size: 1.5em; }
+    #product-content .rating li .fa-star {
+      color: #EDB867; }
+#product-content .action .btn {
+  border-radius: 0px;
+  box-shadow: none; }
+
+#carousel-thumbnail-1 {
+  margin-bottom: 60px; }
+
+#slider-image-product {
+  margin-bottom: 30px; }
 
 #content .up-title {
   text-transform: uppercase;
@@ -466,6 +682,8 @@ body .demo-icon {
     bottom: -10px;
     content: '';
     width: 80px; }
+#content h2.up-title {
+  font-size: 1.4em; }
 #content h2.title.heading, #content h1.heading-page {
   color: #206db5;
   font-size: 2.4em;
